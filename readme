@@ -1,0 +1,18 @@
+This package includes:
+
+1) spamData.dat # data set
+2) gisette.dat # data set
+3) gd.py # gradient descent solver
+4) cgd.py # coordinate descent solver
+5) newton.py # Newton method solver
+5) check_solution.py # python script to check the accuracy of training results
+6) plot_iteration.py # python script to plot the iteration history of one optimization
+7) report.pdf # the report document
+8) houjFunctions/ # modules including functions used by the python solver
+
+To use 3)4)5)6), run "./this_script.py" directly. Those programs are interactive and you can follow the intructions.
+
+To use 6), please run "./plot_iteration.py -f this_is_input_data". Note that you must appoint the input data after "-f".
+For instance, after you run a Newton optimization on spamData with epsilon=0.01, there will be generated a file named 
+"spamData_newton_f_history_epsilon_0.010000.dat". So you can run "./plot_iteration.py -f spamData_newton_f_history_epsilon_0.010000.dat"
+to plot it out. To plot the y axis into logscale, just add word " --log" behind.
